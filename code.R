@@ -36,7 +36,7 @@ maxConc <- max(measurementsIndia$value, na.rm = TRUE)
 plotMap <- ggmap(indiaMap)+ theme_bw()+
   geom_point(data = measurementsIndia, aes(x=longitude,
                                            y=latitude),
-             col = "grey50")+
+             col = "grey50", size = 8)+
   geom_point(data = measurementsIndia, aes(x=longitude,
                                     y=latitude,
                                     frame=hour,
